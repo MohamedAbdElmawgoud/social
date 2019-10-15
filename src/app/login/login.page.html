@@ -1,0 +1,30 @@
+
+<ion-content  class="background">
+  
+  <img src="assets/img/5.png" alt="logo">
+    <div>
+        <ion-item>
+            <ion-label position="floating">User Name</ion-label>
+           
+            <ion-input type="text" [(ngModel)]="username">
+                <ion-icon name="person">
+                  </ion-icon>
+            </ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              
+              <ion-input  type="password"[(ngModel)]="password"><ion-icon name="eye-off">
+                </ion-icon>
+              </ion-input>
+            </ion-item>
+
+  </div>
+  <ion-button (click)="login()" class="login"> <strong>log in</strong></ion-button>
+  <ion-item (click)="buttonClick()"routerLink="/register">
+  <ion-label >
+    Create Account ?
+  </ion-label>
+</ion-item>
+
+</ion-content>
